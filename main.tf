@@ -2,7 +2,7 @@ resource "aws_iam_user" "s3_readonly" {
   name = "s3-readonly-user-${var.postfix}"
 }
 
-resource "aws_iam_user_policy" "lb_ro" {
+resource "aws_iam_user_policy" "s3_ro" {
   name = "test"
   user = aws_iam_user.s3_readonly.name
 
