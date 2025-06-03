@@ -1,5 +1,5 @@
 resource "aws_iam_user" "s3_readonly" {
-  name = "s3-readonly-user"
+  name = "s3-readonly-user-${var.postfix}"
 }
 
 resource "aws_iam_user_policy_attachment" "s3_readonly_attach" {
